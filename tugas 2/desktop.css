@@ -1,0 +1,126 @@
+@media only screen and (min-width: 1010px){
+
+
+    .navbar {
+        display: grid;
+        grid-template-columns: 3fr 1fr 2fr;
+        padding: 0.8rem 3rem;
+        align-items: center;
+    }
+    .nav-1 img {
+        max-width: 50%;
+    }
+    .nav-1 i{
+        display: none;
+    }
+    .nav-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+        letter-spacing: 3px;
+    }
+    .nav-2 a {
+        color: #3f3f3f;
+    }
+    .nav-2 a:hover {
+        color: #00a9ac;
+    }
+    .nav-3 {
+        display: contents;
+        font-size: 1.5rem;
+        text-align: right;
+    }
+    .nav-3 i {
+        letter-spacing: 6px;
+        transition: all 0.5s ease;
+    }
+    .nav-3 i:hover {
+        color: aqua;
+    }
+
+                                   /* HOME */
+    .hero h1 {
+        font-size: 4rem;
+    }
+    .hero p {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+                                    /* ABOUT */
+    .grid-about {
+        grid-template-columns: 2fr 2fr;
+        gap: 3rem;
+        align-items: center;
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+    }       
+    .about-1 {
+        position: relative;
+    }
+    .about-1::before {
+        content: '';
+        position: absolute;
+        font-size: 100rem;
+        top: -1.5rem;
+        left: -1.5rem;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        border: 8px solid var(--color-blue);
+    }
+    .about-2 p {
+        font-size: 15px;
+    }
+   
+                                   /* SERVICES */
+    .grid-services {
+        padding: 3rem;
+        grid-template-columns: 1fr 1fr 1fr;
+    }   
+    .servs {
+        display: grid;
+        grid-template-areas:
+       'i h4 h4 h4 h4 h4'
+       'i p p p p p';
+       column-gap: 10px;
+    }                
+    .servs h4 {
+        grid-area: h4;
+        font-size: 1.1rem;
+        font-weight: 500;
+        text-align: left;
+    }     
+    .servs i{
+        grid-area: i;
+    }
+    .servs p {
+        grid-area: p;
+        text-align: left;
+        line-height: 19px;
+    }
+
+                                      /* FEATURED TOURS */
+    .featured-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }                        
+
+                                      /* CONTACTS */
+    .item1 p {
+        grid-area: p;
+    }                        
+    .item1 {
+        display: grid;
+        grid-template-areas: 'h1 label label label'
+        'p p p p';
+    }
+    label {
+        grid-template-columns: 3fr 1fr;
+    }
+    .item2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }                
+    
+}
